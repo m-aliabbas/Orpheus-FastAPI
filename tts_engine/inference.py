@@ -253,6 +253,7 @@ def generate_tokens_from_api(prompt: str, voice: str = DEFAULT_VOICE, temperatur
     elif torch.cuda.is_available():
         print("Using optimized parameters for GPU acceleration")
     
+    print('Formated Prompt',formatted_prompt)
     # Create the request payload (model field may not be required by some endpoints but included for compatibility)
     payload = {
         "prompt": formatted_prompt,
@@ -265,7 +266,7 @@ def generate_tokens_from_api(prompt: str, voice: str = DEFAULT_VOICE, temperatur
     
     # Add model field - this is ignored by many local inference servers for /v1/completions
     # but included for compatibility with OpenAI API and some servers that may use it
-    model_name = os.environ.get("ORPHEUS_MODEL_NAME", "Orpheus-3b-FT-Q8_0.gguf")
+    model_name = os.environ.get("ORPHEUS_MODEL_NAME", "urdu_female-Q8_0.gguf")
     payload["model"] = model_name
     
     # Session for connection pooling and retry logic
