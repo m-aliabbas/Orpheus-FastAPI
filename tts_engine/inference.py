@@ -170,6 +170,7 @@ VOICE_TO_LANGUAGE.update({voice: "hindi" for voice in HINDI_VOICES})
 VOICE_TO_LANGUAGE.update({voice: "mandarin" for voice in MANDARIN_VOICES})
 VOICE_TO_LANGUAGE.update({voice: "spanish" for voice in SPANISH_VOICES})
 VOICE_TO_LANGUAGE.update({voice: "italian" for voice in ITALIAN_VOICES})
+VOICE_TO_LANGUAGE.update({voice: "urdu" for voice in URDU_VOICES})
 
 # Languages list for the UI
 AVAILABLE_LANGUAGES = ["english", "french", "german", "korean", "hindi", "mandarin", "spanish", "italian","urdu"]
