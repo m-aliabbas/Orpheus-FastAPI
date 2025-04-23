@@ -56,7 +56,7 @@ from tts_engine import generate_speech_from_api, AVAILABLE_VOICES, DEFAULT_VOICE
 # Create FastAPI app
 app = FastAPI(
     title="Orpheus-FASTAPI",
-    description="High-performance Text-to-Speech server using Orpheus-FASTAPI",
+    description="High-performance Text-to-Speech server using Orpheus-FASTAPI with Urdu Support",
     version="1.0.0"
 )
 
