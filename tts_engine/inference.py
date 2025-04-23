@@ -145,7 +145,7 @@ HINDI_VOICES = ["ऋतिका"]
 MANDARIN_VOICES = ["长乐", "白芷"]
 SPANISH_VOICES = ["javi", "sergio", "maria"]
 ITALIAN_VOICES = ["pietro", "giulia", "carlo"]
-URDU_VOICES = [""]
+URDU_VOICES = ["female"]
 # Combined list for API compatibility
 AVAILABLE_VOICES = (
     ENGLISH_VOICES + 
@@ -158,7 +158,7 @@ AVAILABLE_VOICES = (
     ITALIAN_VOICES +
     URDU_VOICES
 )
-DEFAULT_VOICE = ""  # Best voice according to documentation
+DEFAULT_VOICE = "female"  # Best voice according to documentation
 
 # Map voices to languages for the UI
 VOICE_TO_LANGUAGE = {}
